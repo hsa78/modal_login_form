@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>modal login form</title>
+</head>
+<body>
+    <button id = "login-btn">login</button>
+    <div class = "modal-container">
+        <form class = "modal">
+            <button id = "close">&#9747;</button>
+            <br/>
+            <img id = "userPic" src = "./user.png"/>
+            <br/>
+            <p>username</p>
+            <input type="text" class = "username input"/>
+            <br/>
+            <p>password</p>
+            <input type = "password" class = "password input"/>
+            <br/><br/>
+            <button id = "form-login-btn">login</button>
+            <br/>
+            <div id = "remember-me">
+                <input type="checkbox" id = "remember-checkbox" />
+                <p id = "remember-text"> remember me</p>
+            </div>
+            <div id = "container">
+                <button id = "cancel">cancel</button>
+                <a id = "forgot-pass" href="#">forgot password?</a> 
+            </div>
+        </form>
+    </div> 
+</body>
+<script src="./logic.js"></script>
+</html>
