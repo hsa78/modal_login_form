@@ -1,7 +1,6 @@
 "use strict"
 
 function openModal(){
-    console.log('in func');
     document.getElementsByClassName('modal-container')[0].style.display = "block";
     document.querySelector(".modal").className = "modal";
 
@@ -50,6 +49,7 @@ function modalHandler(){
     loginBtnHandler();
     forgotPassHanler();
     cancelHandler();
+    clicOutOfModalHandler();
 }
 
 function loginHandler(){
@@ -63,6 +63,16 @@ function main(){
         loginHandler();
     })
 }
+
+function clicOutOfModalHandler(){
+    window.onclick = function(event){
+        if(event.target.className === "modal-container"){
+            closeModal();
+        }
+    }
+}
+
+
 
 main();
 
